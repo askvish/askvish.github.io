@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IITK Coursestuff</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            /* border: 1px solid red; */
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkgreen;
+        }
+
+        a:hover {
+            color: lightgreen;
+            text-decoration: underline;
+        }
+
+        .app {
+            background-image: url("/Images/igor-miske-JVSgcV8_vb4-unsplash.jpg");
+            background-size: cover;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            /* -webkit-filter: blur(1px);
+            filter: blur(1px); */
+
+        }
+
+
+
+        .header {
+            /* position: fixed;
+            top: 0px; */
+            background-color: green;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header .logo h2 {
+            font-weight: 400;
+            margin: 5px;
+
+        }
+
+        .header .logo h2 a {
+            color: white;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 6px;
+            border: 0.1px solid green;
+
+        }
+
+        .header .logo h2 a:hover {
+            background-color: darkgreen;
+            color: rgba(255, 255, 255, 0.8);
+            border: 0.1px solid lightgreen;
+        }
+
+        .header .nav {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            color: #ffffff;
+
+        }
+
+        .header .nav li {
+            margin: 5px;
+        }
+
+        .header .nav li a {
+            text-decoration: none;
+            color: #ffffff;
+
+            display: block;
+            padding: 15px 20px;
+            border-radius: 6px;
+            border: 0.1px solid green;
+
+
+
+        }
+
+        .header .nav li a:hover {
+            background-color: darkgreen;
+            color: rgba(255, 255, 255, 0.8);
+            border: 0.1px solid lightgreen;
+            text-decoration: underline;
+        }
+
+        .active {
+            background-color: darkgreen;
+            /* text-transform: uppercase; */
+
+        }
+
+        .main {
+
+            min-height: 110vh;
+            /* margin: 60px; */
+
+
+        }
+
+        .main .box {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: white;
+            opacity: 0.8;
+            padding: 20px;
+            margin: 30px;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-top: 10px;
+
+
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 10px;
+            background-color: grey;
+            color: white;
+        }
+
+        caption span {
+            color: white;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.05);
+
+        }
+
+        thead {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+
+        thead tr :nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.2);
+
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            min-height: 300px;
+        }
+
+        .footer .Links {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        footer .Links a {
+            padding: 20px 30px;
+
+            display: block;
+
+
+        }
+
+        footer .Links a:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: rgba(255, 255, 255, 0.8);
+
+            /* display: block; */
+
+
+        }
+
+        
+        .navigator {
+            text-align: center;
+            margin: 60px 0px;
+            padding: 35px;
+            font-size: 30px;
+        }
+
+
+
+        @media (max-width: 980px) {
+            * {
+                font-size: 10px;
+            }
+
+        }
+
+        @media (max-width: 820px) {
+            * {
+                font-size: 6px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+
+            <div class="logo">
+                <h2><a href="#">Coursestuff | IITK</a></h2>
+            </div>
+
+            <nav class="nav">
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="./firstyearcourses.html">First Year Courses</a></li>
+                <li><a href="./secondyearcourses.html">Second Year Courses</a></li>
+                <li><a href="#">Departmental Courses<i class="fa fa-caret-down"></i></a></li>
+                <li><a href="#">ESOs</a></li>
+                <li><a href="#">HSS</a></li>
+            </nav>
+
+        </header>
+
+
+        <main class="main">
+
+
+            <div class="box">
+
+                <table>
+                    <caption>Semester <span>&#8544;</span></caption>
+                    <!--Semester I-->
+
+                    <thead>
+
+                        <tr>
+                            <th>S No.</th>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>MTH101</td>
+                            <td>Mathematics <span>&#8544;</span></td>
+                            <td><a href="https://drive.google.com/drive/folders/0B_6pY6I5fpxiMXVvamJyZmE3bDQ"
+                                    target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>PHY103</td>
+                            <td>Physics II</td>
+                            <td><a href="" target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ESC101</td>
+                            <td>Fundamentals of Computing</td>
+                            <td><a href="https://drive.google.com/drive/folders/0B_6pY6I5fpxiMXVvamJyZmE3bDQ"
+                                    target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>CHM101</td>
+                            <td>Chemistry Laboratory</td>
+                            <td><a href="" target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>PHY101</td>
+                            <td>Physics Laboratory</td>
+                            <td><a href="" target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>PE101</td>
+                            <td>Physical Education I</td>
+                            <td><a href="" target="_blank">Click Here!</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <table>
+                    <caption>Semester <span>&#8545;</span></caption>
+                    <!--Semester II-->
+
+                    <thead>
+
+                        <tr>
+                            <th>S No.</th>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>MTH102</td>
+                            <td>Mathematics <span>&#8545;</span></td>
+                            <td><a href="" target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>PHY102</td>
+                            <td>Physics I</td>
+                            <td><a href="https://drive.google.com/drive/folders/0B_6pY6I5fpxiMXVvamJyZmE3bDQ"
+                                    target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>CHM102</td>
+                            <td>General Chemistry</td>
+                            <td><a href="" target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>TA101</td>
+                            <td>Engineering Graphics</td>
+                            <td><a href="https://drive.google.com/drive/folders/0B_6pY6I5fpxiMXVvamJyZmE3bDQ"
+                                    target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>LIF101</td>
+                            <td>Introduction to Biology</td>
+                            <td><a href="https://drive.google.com/drive/folders/0B_6pY6I5fpxiMXVvamJyZmE3bDQ"
+                                    target="_blank">Click Here!</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>PE102</td>
+                            <td>Physical Education II</td>
+                            <td><a href="" target="_blank">Click Here!</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </main>
+
+        <footer class="footer">
+
+            <ul class="Links">
+                <li><a href="https://www.iitk.ac.in/" target="_blank">IITK</a></li>
+                <li><a href="https://cse.iitk.ac.in/" target="_blank">IITK CSE</a></li>
+                <li><a href="https://webmail.iitk.ac.in/" target="_blank">IITK Webmail</a></li>
+                <li><a href="https://canvas.instructure.com/login/canvas" target="_blank">Canvas</a></li>
+                <li><a href="http://www.birds.iitk.ac.in/">Birds @ IITK</a></li>
+                <li><a href="http://www.iitk.ac.in/counsel/">Counselling Service</a></li>
+            </ul>
+            <hr>
+            <div class="navigator">
+                <a href="#top">Back to the Top <span>&#8593;</span></a>
+            </div>
+
+
+        </footer>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
