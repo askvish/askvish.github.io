@@ -1,0 +1,247 @@
+<h1 id="markdown"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg" alt="Markdown" title="Markdown"></h1>
+<h1 id="markdown-cheatsheet-md">Markdown Cheatsheet (.md)</h1>
+<p><a href="https://www.markdownguide.org" title="The Markdown Guide">The Markdown Guide</a>, Refer to the reference guides for <a href="https://www.markdownguide.org/basic-syntax">basic syntax</a> and <a href="https://www.markdownguide.org/extended-syntax">extended syntax</a>.</p>
+<h2 id="headings">Headings</h2>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code># Heading level 1</code></td>
+<td><code>&lt;h1&gt;Heading level 1&lt;/h1&gt;</code></td>
+<td><h1>Heading level 1</h1></td>
+</tr>
+<tr>
+<td><code>## Heading level 2</code></td>
+<td><code>&lt;h2&gt;Heading level 2&lt;/h2&gt;</code></td>
+<td><h2>Heading level 2</h2></td>
+</tr>
+<tr>
+<td><code>### Heading level 3</code></td>
+<td><code>&lt;h3&gt;Heading level 3&lt;/h3&gt;</code></td>
+<td><h3>Heading level 3</h3></td>
+</tr>
+<tr>
+<td><code>#### Heading level 4</code></td>
+<td><code>&lt;h4&gt;Heading level 4&lt;/h4&gt;</code></td>
+<td><h4>Heading level 4</h4></td>
+</tr>
+<tr>
+<td><code>##### Heading level 5</code></td>
+<td><code>&lt;h5&gt;Heading level 5&lt;/h5&gt;</code></td>
+<td><h5>Heading level 5</h5></td>
+</tr>
+<tr>
+<td><code>###### Heading level 6</code></td>
+<td><code>&lt;h6&gt;Heading level 6&lt;/h6&gt;</code></td>
+<td><h6>Heading level 6</h6></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="emphasis">Emphasis</h2>
+<p>You can add emphasis by making text bold or italic.</p>
+<h2 id="bold">Bold</h2>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>**bold** text</code></td>
+<td><code>&lt;strong&gt;bold&lt;/strong&gt; text</code></td>
+<td><html><strong>bold</strong> text</html></td>
+</tr>
+<tr>
+<td><code>__bold__ text</code></td>
+<td><code>&lt;strong&gt;bold&lt;/strong&gt; text</code></td>
+<td><html><strong>bold</strong> text</html></td>
+</tr>
+<tr>
+<td><code>Love**is**bold</code></td>
+<td><code>Love&lt;strong&gt;is&lt;/strong&gt;bold</code></td>
+<td><html>Love<strong>is</strong>bold</html></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="italic">Italic</h2>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>*italic* text</code></td>
+<td><code>&lt;em&gt;italic&lt;/em&gt; text</code></td>
+<td><html><em>italic</em> text</html></td>
+</tr>
+<tr>
+<td><code>_italic_ text</code></td>
+<td><code>&lt;em&gt;italic&lt;/em&gt; text</code></td>
+<td><html><em>italic</em> text</html></td>
+</tr>
+<tr>
+<td><code>A*cat*meow</code></td>
+<td><code>A&lt;em&gt;cat&lt;/em&gt;meow</code></td>
+<td><html>A<em>cat</em>meow</html></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="bold-and-italic">Bold and Italic</h2>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>***bold and italic***</code></td>
+<td><code>&lt;em&gt;&lt;b&gt;bold and italic&lt;/b&gt;&lt;/em&gt;</code></td>
+<td><html><em><b>bold and italic</b></em></html></td>
+</tr>
+<tr>
+<td><code>___bold and italic___</code></td>
+<td><code>&lt;em&gt;&lt;b&gt;bold and italic&lt;/b&gt;&lt;/em&gt;</code></td>
+<td><html><em><b>bold and italic</b></em></html></td>
+</tr>
+<tr>
+<td><code>A***cat***meow</code></td>
+<td><code>A&lt;em&gt;&lt;b&gt;cat&lt;/b&gt;&lt;/em&gt;meow</code></td>
+<td><html>A<em><b>cat</b></em>meow</html></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="strikethrough">Strikethrough</h2>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>~~The world is flat.~~</code></td>
+<td><code>&lt;s&gt;The world is flat.&lt;s&gt;</code></td>
+<td><html><s>The world is flat.<s></html></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="lists">Lists</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Unordered List</td>
+<td>- First item <br>- Second item <br>- Third item</td>
+<td><code>&lt;html&gt;&lt;ul&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;/ul&gt;&lt;/html&gt;</code></td>
+<td><html><ul><li>First item</li><li>Second item</li><li>Third item</li></ul></html></td>
+</tr>
+<tr>
+<td>Ordered List</td>
+<td>1. First item <br>2. Second item <br>3. Third item</td>
+<td><code>&lt;html&gt;&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;/ol&gt;&lt;/html&gt;</code></td>
+<td><html><ol><li>First item</li><li>Second item</li><li>Third item</li></ol></html></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="links-and-images-and-more">Links and Images and More</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Markdown</th>
+<th>HTML</th>
+<th>Rendered Output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Blockquotes</td>
+<td><code>&gt; Hello World!</code></td>
+<td><code>&lt;blockquote&gt;Hello World!&lt;/blockquote&gt;</code></td>
+<td><html><blockquote>Hello World!</blockquote></html></td>
+</tr>
+<tr>
+<td>Code</td>
+<td><code>type `nano` in cmd.</code></td>
+<td><code>type &lt;code&gt;nano&lt;/code&gt; in cmd.</code></td>
+<td>type <code>nano</code> in cmd.</td>
+</tr>
+<tr>
+<td>Links</td>
+<td><code>Link to [Google](https://www.example.com)</code></td>
+<td><code>Link to &lt;a href=&quot;https://www.google.com/&quot;&gt;Google&lt;/a&gt;</code></td>
+<td><html>Link to <a href="https://www.google.com/">Google</a></html></td>
+</tr>
+<tr>
+<td>Images</td>
+<td><code>![alt text](https://image.jpg) </code></td>
+<td><code>&lt;img src=&quot;https://image.jpg&quot; alt=&quot;alt text&quot;&gt;</code></td>
+<td><html><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg" alt="alt text"></html></td>
+</tr>
+<tr>
+<td>Horizontal Rule</td>
+<td><code>---</code> or <code>***</code></td>
+<td><code>&lt;html&gt;&lt;hr&gt;&lt;/html&gt;</code></td>
+<td><html><hr></html></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="table">Table</h2>
+<pre><code class="language-md">| Syntax    | Description |
+| --------- | ----------- |
+| Header    | Title       |
+| Paragraph | Text        |
+</code></pre>
+<p>Rendered as:</p>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="fenced-code-block">Fenced Code Block</h2>
+<code>
+```js<br>
+{<br>
+&nbsp; &nbsp; "firstName": "John",<br>
+&nbsp; &nbsp; "lastName": "Smith",<br>
+&nbsp; &nbsp; "age": 25<br>
+}
+</code>
+
+<p>Rendered as:</p>
+<pre><code class="language-js">{
+  &quot;firstName&quot;: &quot;John&quot;,
+  &quot;lastName&quot;: &quot;Smith&quot;,
+  &quot;age&quot;: 25
+}
+</code></pre>
