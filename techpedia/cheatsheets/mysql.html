@@ -1,0 +1,30 @@
+<h1>SQL Cheat sheet</h1>
+<pre><code class="language-sql">mysql -u root -p
+
+-- Reset password
+USE mysql;
+UPDATE mysql.user SET password = PASSWORD('my_pass') WHERE user = 'root';
+FLUSH PRIVILEGES;
+
+
+\h -- help
+\q -- quit
+
+status; -- details
+show databases; // SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;
+SHOW DATABASES LIKE 'dbName'; -- check if exists
+SHOW DATABASES WHERE `database` = 'dbName' --safe way to check
+use &lt;databaseName&gt;;
+CREATE DATABASE IF NOT EXISTS &lt;databaseName&gt;;
+show tables;
+describe &lt;tableName&gt;; // desc &lt;tableName&gt;; // explain &lt;tableName&gt;; // SHOW COLUMNS FROM &lt;tableName&gt;;
+describe &lt;databaseName&gt;.&lt;tableName&gt;;
+create table &lt;tableName&gt; (id int primary key, name varchar(20));
+create table &lt;databaseName&gt;.&lt;tableName&gt; (id int primary key, name varchar(20)) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE =   ;
+show create table [db_name].table_name;
+drop table &lt;tableName&gt;;
+select &lt;columnName&gt; from &lt;tableName&gt;;
+select * from &lt;tableName&gt;;
+if exists/ if not exists;
+DEFAULT CHARACTER SET utf8 ;
+</code></pre>
