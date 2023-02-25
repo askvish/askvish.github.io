@@ -6,123 +6,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website | Ashok</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Attach our stylesheet -->
     <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
     <!-- the header -->
-    <header class="header" id="top">
+    <div class="header" id="top">
         <!-- our main logo -->
-        <!-- <a id="logo" href="index.html">
-            <img src="./Images/pingala-red.png" alt="Logo" />
-        </a> -->
+
         <div class="logo">
-            <h2><a href="./index.html">Hello World</a></h2>
+            <div class="logo-image">
+                <a id="logo" href="index.html">
+                    <img src="./images/WAVING_HAND_400px.gif" alt="Logo" width="40px" />
+                </a>
+            </div>
+            <div class="logo-text">
+                <a href="./index.html">
+                    <h2>Hello</h2>
+                </a>
+            </div>
         </div>
         <!-- main navigation links -->
         <nav class="nav">
             <li><a id="active" href="./index.html">Home</a></li>
-            <li><a href="https://askvish.github.io/resume/" target="_blank">Resume</a></li>
-            <li><a href="./firstyear.html">1<sup>st</sup> Year Courses</a></li>
-            <li><a href="./secondyear.html">2<sup>nd</sup> Year Courses</a></li>
-            <li><a href="./thirdyear.html">3<sup>rd</sup> Year Courses</a></li>
-            <li><a href="./fourthyear.html">4<sup>th</sup> Year Courses</a></li>
-
-            <!-- <div class="dropdown">
-                <button class="dropbtn">ESO/SO <i class="fa fa-caret-down"></i></button>
-
-                <div class="dropdown-content">
-
-                    <li><a href="#" target="_blank">ESO201</a></li>
-                    <li><a href="#" target="_blank">ESO202</a></li>
-                    <li><a href="#" target="_blank">ESO203</a></li>
-                    <li><a href="#" target="_blank">ESO204</a></li>
-                    <li><a href="#" target="_blank">ESO207</a></li>
-
-
-                </div>
-            </div> -->
-
-            <!-- <div class="dropdown">
-                <button class="dropbtn">HSS <i class="fa fa-caret-down"></i></button>
-
-                <div class="dropdown-content">
-
-                    <li><a href="#" target="_blank">ENG123</a></li>
-                    <li><a href="#" target="_blank">ENG124</a></li>
-                    <li><a href="#" target="_blank">ECO101</a></li>
-                    <li><a href="#" target="_blank">ECO201</a></li>
-                    <li><a href="#" target="_blank">ART101</a></li>
-
-
-                </div>
-            </div> -->
-
-            <!-- <div class="dropdown">
-                <button class="dropbtn">Departmental Courses<i class="fa fa-caret-down"></i></button>
-
-                <div class="dropdown-content">
-
-                    <li><a href="#" target="_blank">CSE</a></li>
-                    <li><a href="#" target="_blank">ME</a></li>
-                    <li><a href="#" target="_blank">AE</a></li>
-                    <li><a href="#" target="_blank">MTH</a></li>
-                    <li><a href="#" target="_blank">EE</a></li>
-
-
-                </div>
-            </div> -->
-            <!-- <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Sign Up</a></li> -->
-
-
-
-
+            <li><a href="./resume/index.html" target="_blank">Resume</a></li>
+            <li><a href="./techpedia/index.html">Techpedia</a></li>
+            <li><a href="./techpedia/cheatsheets/index.html">CheatSheets</a></li>
         </nav>
-
-    </header>
-
-
-    <div class="main">
-
-        <ul>
-            <li>
-                <a href="https://askvish.github.io/resume/" target="_blank">Portfolio</a>
-            </li>
-            <li>
-                <a href="food-recipes-app-1099.web.app/" target="_blank">Food Reciepe Website</a>
-            </li>
-            <li>
-                Click to Generate random number <input class="btn" type=button onClick="show_random_number()" value="Generate random number"><br>
-            </li>
-        </ul>
-
-        
-
-
     </div>
 
-    <footer class="footer">
+    <!-- the main section -->
+    <div class="main">
+        <div class="card-gallery">
+            <div class="card">
+                <!-- <img src="./Assets/HEART_400px.gif" alt="Image"> -->
+                <div class="card-body">
+                    <h4 class="card-title">Portfolio</h4>
+                    <p class="card-text">Ashok Vishwakarma Resume.</p>
+                    <a href="./resume/index.html" class="btn btn-primary" target="
+                    ">Portfolio</a>
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img src="./Assets/HEART_400px.gif" alt="Image"> -->
+                <div class="card-body">
+                    <h4 class="card-title">Food Recipe Website</h4>
+                    <p class="card-text">Food Reciepe Website.</p>
+                    <a href="https://food-recipes-app-1099.web.app/" class="btn btn-primary" target="
+                    ">Food Reciepe
+                        Website</a>
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img src="./Assets/HEART_400px.gif" alt="Image"> -->
+                <div class="card-body">
+                    <h4 class="card-title">Random number Generator</h4>
+                    <p class="card-text">Click to Generate random number.</p>
+                    <input class="btn btn-primary" type="button" onClick="show_random_number()"
+                        value="Generate random number" /><br />
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <p>
+                        Email: <a href="mailto:you@example.com">you@example.com</a><br>
+                        Phone: +1 (123) 456-7890<br>
+                        Address: 123 Main St, Anytown USA 12345
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center small">Copyright &copy; 2023 Your Name</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 
+    <footer class="footer">
         <ul class="Links">
             <li><a href="https://www.iitk.ac.in/" target="_blank">IITK</a></li>
             <li><a href="https://cse.iitk.ac.in/" target="_blank">IITK CSE</a></li>
-            <li><a href="https://webmail.iitk.ac.in/" target="_blank">IITK Webmail</a></li>
-            <li><a href="https://canvas.instructure.com/login/canvas" target="_blank">Canvas</a></li>
-            <li><a href="http://www.birds.iitk.ac.in/" target="_blank">Birds @ IITK</a></li>
-            <li><a href="http://www.iitk.ac.in/counsel/" target="_blank">Counselling Service</a></li>
+            <li>
+                <a href="https://webmail.iitk.ac.in/" target="_blank">IITK Webmail</a>
+            </li>
+            <li>
+                <a href="https://canvas.instructure.com/login/canvas" target="_blank">Canvas</a>
+            </li>
+            <li>
+                <a href="http://www.birds.iitk.ac.in/" target="_blank">Birds @ IITK</a>
+            </li>
+            <li>
+                <a href="http://www.iitk.ac.in/counsel/" target="_blank">Counselling Service</a>
+            </li>
         </ul>
-        <hr>
+        <hr />
         <div class="navigator">
             <a href="#top">Back to the Top <span>&#8593;</span></a>
         </div>
-
-
-    </footer>
+    </footer> -->
     <script src="./js/index.js"></script>
 </body>
 
