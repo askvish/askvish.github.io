@@ -2,28 +2,130 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cheat Sheets</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CheatSheets</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+    integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Attach our stylesheet -->
+  <link rel="stylesheet" href="../index.css" />
 </head>
 
 <body>
-  <ul>
-    <li>
-      <a href="https://askvish.github.io/techpedia/cheatsheets/markdown-cheatsheet.html">Markdown</a>
-    </li>
-    <li>
-      <a href="https://askvish.github.io/techpedia/cheatsheets/mysql-cheatsheet.html">MySQL</a>
-    </li>
-    <li>
-      <a href="https://askvish.github.io/techpedia/cheatsheets/markdown-cheatsheet.html">Markdown</a>
-    </li>
-    <li>
-      <a href="https://askvish.github.io/techpedia/cheatsheets/markdown-cheatsheet.html">Markdown</a>
-    </li>
-  </ul>
+  <!-- the header -->
+  <div class="header">
+    <!-- our main logo -->
+    <div class="logo">
+      <div class="logo-image">
+        <a href="./">
+          <img src="../Assets/SPARKLES_EMOJI_400px.gif" alt="Logo" width="50px" />
+        </a>
+      </div>
+      <div class="logo-text">
+        <a href="./">Hello World</a>
+      </div>
+    </div>
+    <!-- main navigation links -->
+    <nav class="nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/resume/" target="_blank">Resume</a></li>
+      <li><a href="/technopedia/">Technopedia</a></li>
+      <li><a href="/cheatsheets/">CheatSheets</a></li>
+      <li><a href="/resume/" target="_blank">Contact Me</a></li>
+    </nav>
+  </div>
+  <div class="main">
+    <div class="card-gallery">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Markdown</h4>
+          <p class="card-text">Markdown CheatSheet.</p>
+          <a href="https://askvish.github.io/cheatsheets/markdown.html" class="btn">Link</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">MySQL</h4>
+          <p class="card-text">MySQL CheatSheet.</p>
+          <a href="https://askvish.github.io/cheatsheets/mysql.html" class="btn">Link</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Bash</h4>
+          <p class="card-text">Bash CheatSheet.</p>
+          <a href="https://askvish.github.io/cheatsheets/bash.html" class="btn">Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-gallery">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Markdown</h4>
+          <p class="card-text">Markdown CheatSheet.</p>
+          <a href="https://askvish.github.io/cheatsheets/markdown.html" class="btn">Link</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">MySQL</h4>
+          <p class="card-text">MySQL CheatSheet.</p>
+          <a href="https://askvish.github.io/cheatsheets/mysql.html" class="btn">Link</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Bash</h4>
+          <p class="card-text">Bash CheatSheet.</p>
+          <a href="https://askvish.github.io/cheatsheets/bash.html" class="btn">Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- the footer section -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>
+            Email: <a href="mailto:ashokvishwakarma1099@google.com">ashokvishwakarma1099@google.com</a><br>
+            Phone: (+91) 6376314671<br>
+            Address: Gorakhpur, U.P., India
+          </p>
+        </div>
+        <div class="social-media">
+          <ul class="list-inline social-icons">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/askvish/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/askvish/" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/its_ashok.vish/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="text-center small">Copyright &copy; 2023 <a href="https://github.com/askvish/" target="_blank">Ashok
+            Vishwakarma</a></p>
+      </div>
+    </div>
+  </div>
 
+  <script src="../script.js"></script>
 </body>
 
 </html>

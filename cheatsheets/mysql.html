@@ -1,30 +1,46 @@
-<h1>SQL Cheat sheet</h1>
-<pre><code class="language-sql">mysql -u root -p
+<!DOCTYPE html>
+<html lang="en">
 
--- Reset password
-USE mysql;
-UPDATE mysql.user SET password = PASSWORD('my_pass') WHERE user = 'root';
-FLUSH PRIVILEGES;
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySQL Cheatsheet</title>
+</head>
+
+<body>
+  <h1 id="MySQL"><img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL"
+      title="MySQL"></h1>
+  <h1>SQL Cheat sheet</h1>
+  <pre><code class="language-sql">mysql -u root -p
+
+  -- Reset password
+  USE mysql;
+  UPDATE mysql.user SET password = PASSWORD('my_pass') WHERE user = 'root';
+  FLUSH PRIVILEGES;
 
 
-\h -- help
-\q -- quit
+  \h -- help
+  \q -- quit
 
-status; -- details
-show databases; // SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;
-SHOW DATABASES LIKE 'dbName'; -- check if exists
-SHOW DATABASES WHERE `database` = 'dbName' --safe way to check
-use &lt;databaseName&gt;;
-CREATE DATABASE IF NOT EXISTS &lt;databaseName&gt;;
-show tables;
-describe &lt;tableName&gt;; // desc &lt;tableName&gt;; // explain &lt;tableName&gt;; // SHOW COLUMNS FROM &lt;tableName&gt;;
-describe &lt;databaseName&gt;.&lt;tableName&gt;;
-create table &lt;tableName&gt; (id int primary key, name varchar(20));
-create table &lt;databaseName&gt;.&lt;tableName&gt; (id int primary key, name varchar(20)) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE =   ;
-show create table [db_name].table_name;
-drop table &lt;tableName&gt;;
-select &lt;columnName&gt; from &lt;tableName&gt;;
-select * from &lt;tableName&gt;;
-if exists/ if not exists;
-DEFAULT CHARACTER SET utf8 ;
-</code></pre>
+  status; -- details
+  show databases; // SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;
+  SHOW DATABASES LIKE 'dbName'; -- check if exists
+  SHOW DATABASES WHERE `database` = 'dbName' --safe way to check
+  use &lt;databaseName&gt;;
+  CREATE DATABASE IF NOT EXISTS &lt;databaseName&gt;;
+  show tables;
+  describe &lt;tableName&gt;; // desc &lt;tableName&gt;; // explain &lt;tableName&gt;; // SHOW COLUMNS FROM &lt;tableName&gt;;
+  describe &lt;databaseName&gt;.&lt;tableName&gt;;
+  create table &lt;tableName&gt; (id int primary key, name varchar(20));
+  create table &lt;databaseName&gt;.&lt;tableName&gt; (id int primary key, name varchar(20)) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE =   ;
+  show create table [db_name].table_name;
+  drop table &lt;tableName&gt;;
+  select &lt;columnName&gt; from &lt;tableName&gt;;
+  select * from &lt;tableName&gt;;
+  if exists/ if not exists;
+  DEFAULT CHARACTER SET utf8 ;
+  </code></pre>
+</body>
+
+</html>
