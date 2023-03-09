@@ -7,33 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website | Ashok</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+        integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Attach our stylesheet -->
     <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
     <!-- the header -->
-    <div class="header" id="top">
-        <!-- our main logo -->
-
+    <div class="header">
+        <!-- main logo -->
         <div class="logo">
-            <div class="logo-image">
-                <a id="logo" href="index.html">
-                    <img src="./images/WAVING_HAND_400px.gif" alt="Logo" width="40px" />
+            <div class="logo-img">
+                <a href="./">
+                    <img src="./images/WAVING_HAND_400px.gif" alt="Logo" />
                 </a>
             </div>
             <div class="logo-text">
-                <a href="./index.html">
-                    <h2>Hello</h2>
-                </a>
+                <a href="./">Hello World</a>
             </div>
         </div>
         <!-- main navigation links -->
         <nav class="nav">
-            <li><a id="active" href="./index.html">Home</a></li>
-            <li><a href="./resume/index.html" target="_blank">Resume</a></li>
-            <li><a href="./techpedia/index.html">Techpedia</a></li>
-            <li><a href="./techpedia/cheatsheets/index.html">CheatSheets</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="./resume/" target="_blank">Resume</a></li>
+            <li><a href="./technopedia/">Technopedia</a></li>
+            <li><a href="./cheatsheets/">CheatSheets</a></li>
+            <li><a href="./resume/" target="_blank">Contact Me</a></li>
         </nav>
     </div>
 
@@ -41,109 +42,73 @@
     <div class="main">
         <div class="card-gallery">
             <div class="card">
-                <!-- <img src="./Assets/HEART_400px.gif" alt="Image"> -->
                 <div class="card-body">
                     <h4 class="card-title">Portfolio</h4>
                     <p class="card-text">Ashok Vishwakarma Resume.</p>
-                    <a href="./resume/index.html" class="btn btn-primary" target="
+                    <a href="./resume/" class="btn btn-primary" target="
                     ">Portfolio</a>
                 </div>
             </div>
             <div class="card">
-                <!-- <img src="./Assets/HEART_400px.gif" alt="Image"> -->
                 <div class="card-body">
                     <h4 class="card-title">Food Recipe Website</h4>
-                    <p class="card-text">Food Reciepe Website.</p>
+                    <p class="card-text">Food Reciepe Website using React JS.</p>
                     <a href="https://food-recipes-app-1099.web.app/" class="btn btn-primary" target="
                     ">Food Reciepe
                         Website</a>
                 </div>
             </div>
             <div class="card">
-                <!-- <img src="./Assets/HEART_400px.gif" alt="Image"> -->
                 <div class="card-body">
                     <h4 class="card-title">Random number Generator</h4>
                     <p class="card-text">Click to Generate random number.</p>
-                    <input class="btn btn-primary" type="button" onClick="show_random_number()"
-                        value="Generate random number" /><br />
+                    <input class="btn" type="button" onClick="alert('Be patient! Feature is coming soon!')"
+                        value="Generate random number" />
                 </div>
             </div>
         </div>
     </div>
 
-
-    <footer>
+    <!-- the footer section -->
+    <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Contact Information</h5>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
                     <p>
-                        Email: <a href="mailto:you@example.com">you@example.com</a><br>
-                        Phone: +1 (123) 456-7890<br>
-                        Address: 123 Main St, Anytown USA 12345
+                        Email: <a href="mailto:ashokvishwakarma1099@google.com">ashokvishwakarma1099@google.com</a><br>
+                        Phone: (+91) 6376314671<br>
+                        Address: Gorakhpur, U.P., India
                     </p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Follow Us</h5>
+                <div class="social-media">
                     <ul class="list-inline social-icons">
                         <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
+                            <a href="https://www.linkedin.com/in/askvish/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
+                            <a href="https://github.com/askvish/" target="_blank">
+                                <i class="fab fa-github"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#">
+                            <a href="https://www.instagram.com/its_ashok.vish/" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <p class="text-center small">Copyright &copy; 2023 Your Name</p>
-                </div>
+            <div class="copyright">
+                <p class="text-center small">Copyright &copy; 2023 <a href="https://github.com/askvish/"
+                        target="_blank">Ashok Vishwakarma</a></p>
             </div>
         </div>
-    </footer>
-    <!-- 
-    <footer class="footer">
-        <ul class="Links">
-            <li><a href="https://www.iitk.ac.in/" target="_blank">IITK</a></li>
-            <li><a href="https://cse.iitk.ac.in/" target="_blank">IITK CSE</a></li>
-            <li>
-                <a href="https://webmail.iitk.ac.in/" target="_blank">IITK Webmail</a>
-            </li>
-            <li>
-                <a href="https://canvas.instructure.com/login/canvas" target="_blank">Canvas</a>
-            </li>
-            <li>
-                <a href="http://www.birds.iitk.ac.in/" target="_blank">Birds @ IITK</a>
-            </li>
-            <li>
-                <a href="http://www.iitk.ac.in/counsel/" target="_blank">Counselling Service</a>
-            </li>
-        </ul>
-        <hr />
-        <div class="navigator">
-            <a href="#top">Back to the Top <span>&#8593;</span></a>
-        </div>
-    </footer> -->
-    <script src="./js/index.js"></script>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
