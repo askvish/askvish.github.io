@@ -224,6 +224,7 @@
         top: 50px;
         left: 50px;
       " />
+    <audio id="my_audio" src="Sajne_Sawarne_ki_Jarurat_h_kya.mp3" loop="loop"></audio>
     <div class="heart love1"></div>
     <div class="heart love2"></div>
     <div class="box-bottom">
@@ -305,6 +306,10 @@
             ct.children[i].style.backgroundColor = randVal(color);
         }
     }, 1000);
+
+    window.onload = function () {
+        document.getElementById("my_audio").play();
+    }
 </script>
 
 </html>
